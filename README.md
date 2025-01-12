@@ -22,4 +22,4 @@ Since this workflow requires displayplacer v. ≥ 1.4.0, if you already have it 
 
 ### Acknowledgements
 
-- [displayplacer](https://github.com/jakehilborn/displayplacer) is due to [jakehilborn](https://github.com/jakehilborn)
+- [displayplacer](https://github.com/jakehilborn/displayplacer) is due to @jakehilborn
