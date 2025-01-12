@@ -19,7 +19,7 @@ Since this workflow requires displayplacer v. ≥ 1.4.0, if you already have it 
   
   <img width="764" alt="" src="/images/Capture1.png"/>
 
-- Load a screen configuration with `dpll`. You can remove a configuration with ⌘↩, move it up the list with ⌥↩, and get a detailed view of it with ⇧↩.
+- Load a screen configuration with `dpll`. You can remove a configuration with ⌘↩, move it up the list with ⌥↩, and get a detailed description of it with ⇧↩.
 <img width="764" alt="" src="/images/Capture3.png"/>
 
 ### Remark
