@@ -106,9 +106,14 @@ def main():
             # Replaces persistent_id with serial_id
             # Cf. https://github.com/jakehilborn/displayplacer/issues/89
         command = command.replace(screen["persistent_id"], screen["serial_id"])
-        if comment: comment += " ⦾ "
+        if comment: comment += " ❉ "
         i +=1
-        comment += "Screen " + str(i) + ": " + screen["resolution"] #+ ", Fq. " + screen("hz") + "hz"
+        match = re.search(r"(?P<first_name>.*)/(?P<second_name>.*)", screen["type"])
+        if match:
+            name = "Built in" if match.group("first_name") == "Built in screen" else match.group("second_name")
+        else:
+            name = "Screen " + str(i)
+        comment += name + ": " + screen["resolution"] + "@" + screen["hertz"] + "hz"
     description = md_for_description(screens)
     append_to_conf_file(command, comment, description)
 

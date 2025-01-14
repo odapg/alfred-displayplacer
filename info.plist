@@ -614,7 +614,7 @@
 				<string>cat &lt;&lt; EOB
 {"items": [
 	{
-		"title": "Save the screen configuration as '$1'",
+		"title": "Save the current screen configuration as '$1'",
 		"arg": "$1"
 	}
 ]}
@@ -714,29 +714,6 @@ EOB</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>eval "displayplacer $command"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>11</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>1184FAEB-5F1F-4AC9-B066-2485571C05F2</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -762,6 +739,29 @@ EOB</string>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
 			<string>3820EAC8-81C2-429E-8324-9D57F8B3E55A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>eval "displayplacer $command"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>1184FAEB-5F1F-4AC9-B066-2485571C05F2</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -941,20 +941,20 @@ EOB</string>
 	<string># Alfred displayplacer
 
 Change the screen(s) resolution within Alfred.
-Save and load screens configuration.
+Save and load screens configurations.
 
 ### Installation
 
-1. Install displayplacer command with `brew install displayplacer`.
+1. Install the [displayplacer](https://github.com/jakehilborn/displayplacer) command with `brew install displayplacer`.
 Since this workflow requires displayplacer v. ≥ 1.4.0, if you already have it installed, you may need to update it with `brew upgrade displayplacer`.
 
-2. (Optional) Change the keywords in the configuration window and add hotkeys.
+2. (Optional) Change the keywords in the configuration window. You can also add hotkeys.
 
 ### Usage
 
 - Change the resolution of your screen(s) with `dplc`.
 - Save your current screen configuration (which you can modify in System Preferences &gt; Displays as well) with `dpls`.
-- Load a screen configuration with `dpll`. You can remove a configuration with ⌘↩, move it up the list with ⌥↩, and get a detailed view of it with ⇧↩.
+- Load a screen configuration with `dpll`. You can remove a configuration with ⌘↩, move it up the list with ⌥↩, and get a detailed description of it with ⇧↩.
 
 ### Remark
 
@@ -1210,6 +1210,8 @@ Since this workflow requires displayplacer v. ≥ 1.4.0, if you already have it 
 			<string>save_keyword</string>
 		</dict>
 	</array>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
 	<string>1.0</string>
 	<key>webaddress</key>
