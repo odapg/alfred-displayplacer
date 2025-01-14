@@ -13,14 +13,14 @@ Since this workflow requires displayplacer v. ≥ 1.4.0, if you already have it 
 ### Usage
 
 - Change the resolution of your screen(s) with `dplc`.
-  <img width="764" alt="" src="/images/Capture2.png"/>
+  <img width="764" alt="" src="images/Capture2.png"/>
 
 - Save your current screen configuration (which you can modify in System Preferences > Displays as well) with `dpls`.
   
-  <img width="764" alt="" src="/images/Capture1.png"/>
+  <img width="764" alt="" src="images/Capture1.png"/>
 
 - Load a screen configuration with `dpll`. You can remove a configuration with ⌘↩, move it up the list with ⌥↩, and get a detailed description of it with ⇧↩.
-<img width="764" alt="" src="/images/Capture3.png"/>
+<img width="764" alt="" src="images/Capture3.png"/>
 
 ### Remark
 
